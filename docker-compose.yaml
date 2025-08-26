@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: urlshortener_postgres
+    environment: 
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1111
+      POSTGRES_DB: urls
+    ports: 
+    - "5433:5432"
+    volumes:
+      - ./migrations:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+  app:
+    build: .
+    depends_on:
+    - postgres
+    ports:
+    - "8080:8080"
+    volumes:
+    - ./config:/app/config:ro
+    environment:
+    - CONFIG_PATH=/app/config/local.yaml
+volumes:
+ postgres_data:
