@@ -1,6 +1,5 @@
 package repository
 
-//internal/repository/repository.go
 import "context"
 
 type URLRepository interface {

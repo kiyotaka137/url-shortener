@@ -1,6 +1,5 @@
 package repository
 
-//internal/repository/postgres.go
 import (
 	"context"
 	"fmt"

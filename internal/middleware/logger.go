@@ -1,5 +1,5 @@
 package middleware
-// internal/middleware/logger
+
 import (
 	"log/slog"
 	"time"

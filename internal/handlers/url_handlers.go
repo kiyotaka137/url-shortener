@@ -1,11 +1,12 @@
 package handler
-//internal/hanlers/url_handlers.go
+
 import (
 	"net/http"
 	"url-shortener/internal/service"
 
 	"github.com/gin-gonic/gin"
 )
+
 type URLHandler struct {
 	service *service.URLService
 }

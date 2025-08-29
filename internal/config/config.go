@@ -1,6 +1,5 @@
 package config
 
-//internal/config/config.go
 import (
 	"log"
 	"os"

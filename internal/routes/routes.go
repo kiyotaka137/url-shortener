@@ -1,6 +1,5 @@
 package routes
 
-//internal/routes/routes.go
 import (
 	"log/slog"
 	handler "url-shortener/internal/handlers"

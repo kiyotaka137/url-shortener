@@ -1,6 +1,5 @@
 package main
 
-//cmd/url-shortener/main.go
 import (
 	"context"
 	"log/slog"
